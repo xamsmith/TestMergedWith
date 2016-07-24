@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                x:Class="ResourceLibrary.CustomResources">
+  <Style x:Key="StackLayoutStyle" TargetType="StackLayout">
+    <Setter Property="BackgroundColor" Value="Yellow" />
+  </Style>
+  <Color x:Key="Color_1">Red</Color>
+</ResourceDictionary>

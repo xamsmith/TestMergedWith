@@ -14,6 +14,7 @@ namespace TestMergedWith
         {
             InitializeComponent();
             MainPage = new MainPage();
+            ResourceLibrary.ResourceLibrary.Init();
         }
     }
 }
