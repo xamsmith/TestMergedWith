@@ -4,14 +4,30 @@
 		         xmlns:custom="clr-namespace:ResourceLibrary;assembly=ResourceLibrary" 
              x:Class="TestMergedWith.MainPage">
   <ContentPage.Resources>
-    <ResourceDictionary MergedWith="custom:CustomResources">
-      <!--Style x:Key="StackLayoutStyle" TargetType="StackLayout">
+    <ResourceDictionary>
+      <Style x:Key="StackLayoutStyle" TargetType="StackLayout">
         <Setter Property="BackgroundColor" Value="Blue" />
-      </Style-->
-      <!--Color x:Key="Color_1">White</Color-->
+      </Style>
+      <Color x:Key="Color_1">White</Color>
     </ResourceDictionary>
   </ContentPage.Resources>
-  <StackLayout Style="{DynamicResource StackLayoutStyle}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-    <Label Text="Welcome to Xamarin Forms!" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand" BackgroundColor="{DynamicResource Color_1}" />
+  <StackLayout Style="{DynamicResource StackLayoutStyle}" 
+               VerticalOptions="FillAndExpand" 
+               HorizontalOptions="FillAndExpand">
+    <StackLayout.Resources>
+      <ResourceDictionary>
+        <Style x:Key="StackLayoutStyle" TargetType="StackLayout">
+          <Setter Property="BackgroundColor" Value="Teal" />
+          <Setter Property="Padding" Value="40" />
+        </Style>
+        <Color x:Key="Color_1">Silver</Color>
+      </ResourceDictionary>
+    </StackLayout.Resources>  
+    <Label Text="Welcome to Xamarin Forms!"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="CenterAndExpand" 
+           TextColor="Black"
+           BackgroundColor="{DynamicResource Color_1}" />
   </StackLayout>
 </ContentPage>

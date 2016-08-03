@@ -1,5 +1,5 @@
 # TestMergedWith
-Xamarin.Forms app to demonstrate the ResourceDictionary MergedWith property.  In the app, ResourceDictionaries are defined at
+Xamarin.Forms app to demonstrate the ResourceDictionary MergedWith capability.  In the app, ResourceDictionaries are defined at
 three levels:
 
 	1) In a separate PCL (ResourceLibrary.CustomResources)

@@ -4,11 +4,11 @@
 		         xmlns:custom="clr-namespace:ResourceLibrary;assembly=ResourceLibrary" 
              x:Class="TestMergedWith.App">
   <Application.Resources>
-    <ResourceDictionary MergedWith="custom:CustomResources">
-      <!--Style x:Key="StackLayoutStyle" TargetType="StackLayout">
+    <ResourceDictionary>
+      <Style x:Key="StackLayoutStyle" TargetType="StackLayout">
         <Setter Property="BackgroundColor" Value="Blue" />
-      </Style-->
-      <!--Color x:Key="Color_1">Green</Color-->
+      </Style>
+      <Color x:Key="Color_1">Green</Color>
     </ResourceDictionary>
   </Application.Resources>
 </Application>
