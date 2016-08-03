@@ -16,7 +16,7 @@ attempting the same access using StaticResource, it works in some cases and not 
 	• If there is a page-level dictionary and the key is only defined in the PCL, it does seem to work.
 	• If the key is defined in either App.xaml or the page-level dictionary it seems to work.
 
-Implicit resources (i.e., one that is not marked with x:key "-name-", and that get applied automatically by control type) seem to 
+Implicit resources (i.e., ones that are not marked with x:key "-name-", and that get applied automatically by control type) seem to 
 work regardless of where they are defined.
 
 In the attached single XAML page program, there is a StackLayout defined in MainPage.xaml.  It references a Style (TitleBarStyle) and 
